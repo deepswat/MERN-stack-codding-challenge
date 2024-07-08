@@ -1,0 +1,166 @@
+/* General Styles */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Dashboard Container */
+.dashboard-container {
+  background-image: linear-gradient(to right, rgb(46, 138, 158), rgb(118, 113, 112));
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Dashboard Header */
+.dashboard-header {
+  background-image: linear-gradient(to bottom, rgb(68, 130, 147), rgba(94, 238, 224, 0.795));
+  align-self: stretch;
+  display: flex;
+  justify-content: center;
+  padding: 0 20px;
+}
+
+/* Dashboard Title */
+.dashboard-title {
+  padding: 14px;
+  color: rgb(17, 19, 65);
+  background: rgba(255, 255, 255, 0.9); /* Light background for better readability */
+  text-align: center;
+  box-shadow: 0px 0px 16px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  border-radius: 10px; /* Rounded corners for a modern look */
+  font-family: 'Arial', sans-serif; /* Clear and widely supported font */
+  font-size: 34px;
+}
+
+/* Input Section */
+.input-section {
+  background-color: rgb(180, 193, 207); /* Light grey for input section */
+  border: 1px solid rgb(0, 0, 0); /* Black border for definition */
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+/* Input Container */
+.input-container {
+  background-color: #B4C1CF;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-radius: 4px;
+}
+
+.search-input {
+  background-color: transparent;
+  outline: none;
+  border: none;
+  font-size: 16px;
+  margin-left: 10px;
+  color: #333;
+}
+
+/* Transactions Section */
+
+
+/* Transaction Table */
+.transactions-section {
+  background-color: rgba(255, 255, 255, 0.9); /* Light background for better readability */
+  border: 1px solid rgb(0, 0, 0); /* Black border for definition */
+  height: 300px;
+  overflow-y: auto;
+  padding: 20px;
+}
+
+.transaction-table thead {
+  background-color: #D1E3F3;
+}
+
+.transaction-table thead th {
+  padding: 10px;
+  text-transform: uppercase;
+  border: 1px solid #A9BFD8;
+  color: #333;
+}
+
+.transaction-table tbody td {
+  padding: 10px;
+  border: 1px solid #A9BFD8;
+}
+
+.transaction-table td, .transaction-table tr {
+  min-width: 50px;
+  max-height: 50px;
+}
+
+.sold-status {
+  font-size: 20px;
+  text-align: center;
+  color: #2F855A;
+}
+
+.loading-view, .failure-view, .empty-view {
+  height: 40vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #333;
+}
+
+.retry-button {
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #00CCFF;
+  color: #FFF;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.retry-button:hover {
+  background-color: #0099CC;
+}
+
+/* Pagination */
+.pagination-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+
+.pagination-buttons button[type="button"] {
+  padding: 10px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.pagination-buttons button[type="button"]:hover {
+  color: #007BFF;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .input-section, .transactions-section {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .input-container {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .search-input {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+}
